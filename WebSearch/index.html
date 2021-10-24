@@ -42,7 +42,7 @@
         }
         .searchText {
             width: 450px;
-            border: none;
+            border: 0 white;
             margin-left: 5px;
         }
         .queryWrapper {
@@ -78,6 +78,11 @@
         .footer div a {
             margin-right: 10px;
         }
+        *:focus 
+        {
+            outline: none;
+        }
+
     </style>
 </head>
 
@@ -98,7 +103,7 @@
                 <input class="searchText" type="text" name="q">
             </div>
             <div class="buttons">
-                <button>Search</button>
+                <button type="submit">Search</button>
                 <button>I'm Feeling Lucky</button>
             </div>
         </form>
